@@ -1,10 +1,11 @@
-import FoodSearch from "./components/FoodSearch";
+import { Container } from "@mui/material";
+import { RestaurantSearch } from "./components/RestaurantSearch";
 
 function App() {
   return (
-    <div className="App">
-      <FoodSearch />
-    </div>
+    <Container className="App" maxWidth="md">
+      <RestaurantSearch />
+    </Container>
   );
 }
 

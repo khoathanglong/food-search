@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
-import { fetchCategories, fetchDishes } from "../services";
+import { fetchCategories, fetchRestaurants } from "../services";
 
 export const useCategories = () => {
   const [categories, setCategories] = useState([]);
-  const [error, setError] = useState();
+  const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -12,27 +12,27 @@ export const useCategories = () => {
       .then((res) => {
         setCategories(res.data);
       })
-      .catch(setError)
+      .catch(() => setError(true))
       .finally(() => setIsLoading(false));
   }, []);
 
   return { isLoading, categories, error };
 };
 
-export const useDishes = () => {
-  const [dishes, setDishes] = useState([]);
-  const [error, setError] = useState();
+export const useRestaurants = () => {
+  const [restaurants, setRestaurants] = useState([]);
+  const [error, setError] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     setIsLoading(true);
-    fetchDishes()
+    fetchRestaurants()
       .then((res) => {
-        setDishes(res.data);
+        setRestaurants(res.data);
       })
-      .catch(setError)
+      .catch(() => setError(true))
       .finally(() => setIsLoading(false));
   }, []);
 
-  return { isLoading, dishes, error };
+  return { isLoading, restaurants, error };
 };
