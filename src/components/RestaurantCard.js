@@ -17,7 +17,7 @@ export const RestaurantCard = ({
     [rating]
   );
   return (
-    <Card sx={{ position: "relative", borderRadius: 2 }}>
+    <Card sx={{ position: "relative", borderRadius: 2 }} elevation={2}>
       <CardMedia
         component="img"
         height="140"
@@ -26,7 +26,12 @@ export const RestaurantCard = ({
       />
       <PromotionIcon promotion={promotion} />
       <CardContent>
-        <Typography gutterBottom variant="h5" component="div">
+        <Typography
+          gutterBottom
+          variant="body1"
+          component="div"
+          sx={{ fontWeight: "bold", mb: 2 }}
+        >
           {restaurant}
         </Typography>
         <Chip
@@ -44,7 +49,7 @@ export const RestaurantCard = ({
           <Chip
             size="small"
             label="New"
-            sx={{ color: "success.main", borderRadius: 2, fontWeight: "bold" }}
+            sx={{ color: "success.light", borderRadius: 2, fontWeight: "bold" }}
           />
         )}
       </CardContent>

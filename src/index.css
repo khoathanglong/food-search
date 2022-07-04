@@ -1,3 +1,6 @@
+body {
+  background-color: #f7f8fa;
+}
 button {
   text-transform: unset !important;
   color: black !important

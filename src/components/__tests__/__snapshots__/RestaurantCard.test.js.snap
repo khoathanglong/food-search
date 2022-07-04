@@ -3,7 +3,7 @@
 exports[`RestaurantCard renders correctly when isNew=false 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-19hmzbv-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-qoz6c7-MuiPaper-root-MuiCard-root"
   >
     <img
       alt="Kog"
@@ -24,7 +24,7 @@ exports[`RestaurantCard renders correctly when isNew=false 1`] = `
       class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
     >
       <div
-        class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-3dl3ms-MuiTypography-root"
       >
         Kog
       </div>
@@ -65,7 +65,7 @@ exports[`RestaurantCard renders correctly when isNew=false 1`] = `
 exports[`RestaurantCard renders correctly when isNew=true 1`] = `
 <div>
   <div
-    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root css-19hmzbv-MuiPaper-root-MuiCard-root"
+    class="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation2 MuiCard-root css-qoz6c7-MuiPaper-root-MuiCard-root"
   >
     <img
       alt="Kog"
@@ -86,7 +86,7 @@ exports[`RestaurantCard renders correctly when isNew=true 1`] = `
       class="MuiCardContent-root css-46bh2p-MuiCardContent-root"
     >
       <div
-        class="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+        class="MuiTypography-root MuiTypography-body1 MuiTypography-gutterBottom css-3dl3ms-MuiTypography-root"
       >
         Kog
       </div>
@@ -120,7 +120,7 @@ exports[`RestaurantCard renders correctly when isNew=true 1`] = `
         </span>
       </div>
       <div
-        class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault css-1fi07dx-MuiChip-root"
+        class="MuiChip-root MuiChip-filled MuiChip-sizeSmall MuiChip-colorDefault MuiChip-filledDefault css-16ku107-MuiChip-root"
       >
         <span
           class="MuiChip-label MuiChip-labelSmall css-wjsjww-MuiChip-label"

@@ -36,7 +36,7 @@ export const RestaurantSearch = () => {
           onChange={handleSearchTextChange}
         />
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} sx={{ my: 2 }}>
         <Categories
           onChange={handleSelectCategory}
           currentCategory={currentCategory}
