@@ -1,10 +1,12 @@
-# Getting Started with Create React App
+This project is developed based on `create-react-app`, read more about its configs [here](https://github.com/facebook/create-react-app)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### [DEMO](https://elaborate-longma-1689d2.netlify.app/)
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `npm install` 
+
+Install all dependencies. NodeJs version `v16.15.0` and npm version `8.5.5` are recommended.
 
 ### `npm start`
 
@@ -39,32 +41,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Important notes on React 18
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+While Strict Mode is active, all components mount and unmount before being remounted again. This leads to API is called twice in side useEffect. To resolve it, you could remove Strict Mode if needed. This only affects developement environment, not Built (Production Ready) codes. Find more info [Here](https://www.techiediaries.com/react-18-useeffect/)
